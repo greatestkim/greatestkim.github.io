@@ -22,14 +22,16 @@ section{color:white; }
 #start button:hover{color:white; background-color: rgba(255, 255, 255, 0);}
 
 #qna{margin: 0 auto; width: 90vw; height: 25vw; align-items: center; }
-#qna div{float: left; width: 18vw; height: 18vw;  margin: 2vw; cursor: pointer; }
-#qna img{position:relative; width: 18vw; height: 18vw; margin: -25vh 3vw 0 1vw;}
+#qna div{float: left; width: 14vw; height: 14vw;  margin: 2vw; cursor: pointer; }
+#qna img{position:relative; width: 14vw; height: 14vw; margin: -15vh 3vw 0 1vw;}
 
+#qna #p0{animation: floating 1.5s ease-in-out infinite;}
 #qna #p1{animation: floating 1.3s ease-in-out infinite;}
 #qna #p2{animation: floating 1.8s ease-in-out infinite;}
 #qna #p3{animation: floating 1.6s ease-in-out infinite;}
 #qna #p4{animation: floating 1.4s ease-in-out infinite;}
 
+#qna #p0 img{transform: rotate(60deg); }
 #qna #p1 img{transform: rotate(90deg); }
 #qna #p2 img{transform: rotate(180deg); }
 #qna #p3 img{transform: rotate(0deg); }
