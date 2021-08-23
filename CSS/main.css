@@ -1,0 +1,71 @@
+@import "reset.css";
+html, body{width: 100%; height: 100%; overflow: hidden; }
+body{background-color: rgb(15, 13, 41); background-image: url(../IMG/back.gif);}
+
+.container {
+    width: 100%;
+    margin: 0px auto;
+  }
+  
+  .sidebar-left {
+    width: 25%;
+    height: 30vh;
+    float: left;
+    
+  }
+  #content {
+    width: 50%;
+    height: 40vh;
+    margin-top: 30vh;
+    float: left;
+    animation: floating 1.3s ease-in-out infinite;
+    text-align: center;
+    position: relative;
+  }
+#content #title{position: absolute; top: 5%;
+	left: 24%; color: azure;}
+#content img{width: 45vw;  transform: translate(0%,-25%); }
+  @keyframes floating {
+    0%    {transform: translateY(-4px);}
+  20%   {transform: translateY(-7px);}
+  40%   {transform: translateY(-10px);}
+  60%   {transform: translateY(-13px);}
+  80%   {transform: translateY(-10px);}
+  90%  {transform: translateY(-7px);}
+  100%  {transform: translateY(-4px);}
+  }
+  #content h1{font-size: 8vw; }
+  #content h2{font-size: 6vw;}
+  .sidebar-right {
+    width: 25%;
+    height: 30vh;
+    margin-bottom: 40vh;
+    float: right;
+    
+  }
+  #content:hover{cursor:pointer;}
+#one:hover{
+    transform: translateX(60%);
+    transition: 3s;
+}
+#two:hover{
+    transform: translateY(60%);
+    transition: 2s;
+}
+#three:hover{
+    transform: translateY(-60%);
+    transition: 1.5s;
+}
+#four:hover{
+    transform: translateX(-60%);
+    transition: 0.5s;
+}
+.hover img{}
+/* #one img{position: absolute; left: calc(-200px); top: calc(0vh);  }
+#two img{position: absolute; left: calc(100vw - 200px); top: calc(-200px); }
+#three img{position: absolute; left: calc(0vw); top: calc(100vh + 200px); }
+#four img{position: absolute; left: calc(100vw + 200px); top: calc(100vh - 200px); } */
+#one img{transform: translate(-300px, 0px);}
+#two img{transform: translate(0px, -225px);}
+#three img{transform: translate(0px, 170px);}
+#four img{transform: translate(390px, 0px);}

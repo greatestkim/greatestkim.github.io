@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html id="lang">
+    <head>
+        <title>cookie or death</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/CSS/style.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <div id='background'>
+                <!-- <img src="../IMG/metro.png" alt="" class="rotimg"> -->
+                <div class="wrapAll">
+                    <header>
+                        <div class="container">
+                            <div class="text">
+                                <h3>I LOVE COOKIE!</h3>
+                            </div>
+                            <div id="siteName"><p>@i'm_A_alien</p></div>
+                        </div>
+                    </header>
+                    <section>
+                        <div class="container" >
+                            <div class="text"></div>
+                            <div class="wrapTranslator">
+                                <div class="translator" id="left">
+                                    <div class="top">
+                                        <div class="text">eng</div>
+                                        <div id="change">
+                                            <button class="button" value="change" name="eng">alien</button>
+                                        </div>
+                                    </div>
+                                    <div class="mid">
+                                        <div><form id="translatorLeft" action="" method="POST"><textarea name="engText" placeholder="enter text"></textarea></form></div>
+                                        <div id="textLen">0/1000</div>
+                                    </div>
+                                    <div class="btm">
+                                        <div class="button"><button type="submit" form="translatorLeft" value="translate">translate</button></div>
+                                    </div>
+                                </div>
+                               
+                                <div class="translator" id="right">
+                                    <div class="top">
+                                        <div class="text">alien</div>
+                                    </div>
+                                    <div class="mid">
+                                        <div class="text"></div>
+                                    </div>
+                                    <div class="btm">
+                                        <div id="likes">
+                                            <button class="button" value="likes">likes</button>
+                                        </div>
+                                        <div id="copy">
+                                            <button class="button" value="copy">copy</button>
+                                        </div>
+                                        <div id="share">
+                                            <button class="button" value="share">share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <footer>
+                        <div class="container">
+                            <ul>
+                                <li><a href="index.html" id="main">more</a></li> <!-- a->main -->
+                                <li><a href="cookieType.html" id="type">more</a></li><!-- b->about -->
+                                <li><a href="info.html" id="info">more</a></li><!-- c->contact -->
+                            </ul>
+                            <div class="text">copy right 2021</div>
+                        </div>
+                    </footer>
+                </div>
+            </div>      
+            <div class="modal" id="shareModal"> 
+                <div class="modal_body">
+                    <div id="share">
+                        <a class="button" id="face" href="javascript:shareTwitter();">facebook</a>
+                        <a class="button" id="twit" href="javascript:shareFacebook();">twitter</a>
+
+                    </div>
+                    
+                </div> 
+            </div> 
+            <div class="modal" id="likesModal"> 
+                <div class="modal_body">
+                   <div id="heart">
+                       <img src="../IMG/heart.png" alt="">
+                   </div>
+                </div> 
+            </div> 
+        </div>
+        <div class="modal hidden"> 
+            <div class="modal_body hidden">
+                boo!
+            </div> 
+        </div> 
+
+        <!-- <script src="app.js"></script> -->
+        <script type="module" src="/JS/sectionJS.js"></script>
+        <script type="module" src="/JS/footerJS.js"></script>
+        <script type="module" src="/JS/loadMetro.js"></script>
+    </body>
+</html>
